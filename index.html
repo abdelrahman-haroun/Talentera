@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta charset="UTF-8" />
+    <meta name="description" content="task">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Talentera</title>
+    <link rel="shortcut icon" href="assest/icon/i.png" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -16,26 +19,30 @@
   </head>
   <body>
     <header>
+      <!-- I will useing flex to style the nav bar -->
       <nav class="navbar">
         <div class="logo">
           <i class="fa fa-home"></i>
-          <a>LOGO</a>
+          <a href="#">LOGO</a>
         </div>
         <ul>
+          <!-- Using check box to make a (hamburger menu) responsive web site   -->
           <input id="toggle" type="checkbox"></input>
 
 <label for="toggle" class="hamburger">
  &#9776; 
 </label>
+
           <div class="menu">
+            
             <li> <a href="#Team">Team</a></li>
-            <li><a href="#Work">Work</a> </li>
+            <li><a href="#Work" >Work</a> </li>
             <li><a href="#">Price</a> </li>
             <li><a href="#Contact">Contact</a> </li>
           </div>
         </ul>
         <div class="dropdown">
-          <a class="drop">Drop down </a>
+          <a  href ="#" class="drop">Drop down </a>
           <i class="fa-solid fa-caret-down" style="color: #ffffff"></i>
           <div class="small-list">
             <a href="#">link 1</a>
@@ -49,16 +56,18 @@
       ></i>
     </header>
     <section class="hero">
+      <!-- using background image in style -->
       <h2 class="btn">Talentera</h2>
     </section>
     <main>
       <section id="Team" class="text-center">
         <h2>OUR TEAM</h2>
         <p>Meet the team-our office rats:</p>
+        <!-- i will use grid for styling this section -->
         <section class="our-team">
           <div class="card">
             <div class="rounded-img">
-              <img src="assest/image/islam.png" alt="" />
+              <img src="assest/image/islam-min.png" alt="islam"  />
             </div>
             <h3>Islam ALZatary</h3>
             <br />
@@ -66,7 +75,7 @@
           </div>
           <div class="card">
             <div class="rounded-img">
-              <img src="assest/image/tayser.png" alt="" />
+              <img src="assest/image/tayser-min.png" alt="tayser" />
             </div>
             <h3>Tayseer Emam</h3>
             <br />
@@ -74,7 +83,7 @@
           </div>
           <div class="card">
             <div class="rounded-img">
-              <img src="assest/image/eman.png" alt="" />
+              <img src="assest/image/eman-min.png" alt="eman" />
             </div>
             <h3>Eman Subhi</h3>
             <br />
@@ -82,7 +91,7 @@
           </div>
           <div class="card">
             <div class="rounded-img">
-              <img src="assest/image/reem.png" alt="" />
+              <img src="assest/image/reem-min.png" alt="reem" />
             </div>
             <h3>Reem Yakoub</h3>
             <br />
@@ -91,6 +100,7 @@
         </section>
       </section>
       <section class="our-work" id="Work">
+         <!-- i will use grid for styling this section -->
         <div class="text">
           <h2>Our work</h2>
           <br />
@@ -105,7 +115,7 @@
           </p>
         </div>
         <div class="item">
-          <img src="assest/image/img_snow.jpg" alt="" />
+          <img src="assest/image/img_snow.jpg" alt="snow" />
           <div class="textaa">
             <h2>Customer 1</h2>
             <h4>Trade</h4>
@@ -116,7 +126,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="assest/image/northern-lights_1200x480.jpg" />
+          <img src="assest/image/northern-lights_1200x480.jpg"alt="northern-lights" />
           <div class="textaa">
             <h2>Customer 2</h2>
             <h4>Trade</h4>
@@ -127,7 +137,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="assest/image/DcnR2NDX0AEp2nS.jpeg" alt="" />
+          <img src="assest/image/DcnR2NDX0AEp2nS.jpeg" alt="DcnR2NDX0AEp2nS" />
           <div class="textaa">
             <h2>Customer 3</h2>
             <h4>Trade</h4>
@@ -139,6 +149,7 @@
         </div>
       </section>
     </main>
+    <!-- using flex to style this section -->
     <section class="contactus" id="Contact">
       <div class="text">
         <h2>Contact Us</h2>
@@ -149,10 +160,10 @@
         <p><i class="far fa-envelope"></i>test@test.com</p>
       </div>
       <fieldset>
-        <form>
+        <form action="#" method="get" id="form">
           <label for="fname">Name</label>
           <input type="text" id="fname" name="fname" />
-          <label for="lname">Email</label>
+          <label for="email">Email</label>
           <input type="email" id="email" name="email" />
           <label for="maseage">Maseage</label>
           <input type="text" id="maseage" name="maseage" />
@@ -161,7 +172,8 @@
               <input type="checkbox" name="checkbox" id="checkbox" />
               <p>I like it !</p>
             </div>
-            <div class="btn"><label for="send">Send</label></div>
+            <button  type="submit" form="form" value="Send">Send</button>
+       
           </div>
         </form>
       </fieldset>
@@ -170,14 +182,15 @@
       <img src="assest/image/ema.png" alt="m". "border=0" />
     </section>
     <footer>
-      <a href=""></a>
+      <!-- useing flex to style the footer  -->
+      <a href="#"></a>
       <h2>Follow Us</h2>
       <div class="soical-links">
-        <img src="assest/icon/facebook.png" alt="" />
-        <img class="s" src="assest/icon/twitter-logo.png" alt="" />
-        <img class="d" src="assest/icon/google-plus.png" alt="" />
-        <img class="s" src="assest/icon/instagram.png" alt="" />
-        <img class="s" src="assest/icon/linkedin.png" alt="" />
+        <img src="assest/icon/facebook.png" alt="facebook" />
+        <img class="s" src="assest/icon/twitter-logo.png" alt="twitter" />
+        <img class="d" src="assest/icon/google-plus.png" alt="google-plus" />
+        <img class="s" src="assest/icon/instagram.png" alt="instagram" />
+        <img class="s" src="assest/icon/linkedin.png" alt="linkedin" />
       </div>
     </footer>
   </body>
