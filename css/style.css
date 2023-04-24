@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
-
+/* Global style */
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +8,9 @@
 }
 ul li {
   list-style: none;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   font-size: 13px;
@@ -28,7 +31,7 @@ a {
 .text-center {
   text-align: center;
 }
-
+/* header style  */
 header {
   position: fixed;
   top: 0;
@@ -55,6 +58,7 @@ header {
   align-items: center;
   gap: 1rem;
 }
+/* this style to make a burger menu  */
 #toggle,
 .hamburger {
   display: none;
@@ -67,7 +71,7 @@ header {
   display: flex;
   gap: 10px;
 }
-
+/* style to make a drop down  */
 .small-list {
   display: none;
 }
@@ -86,12 +90,12 @@ header {
   top: 2rem;
   z-index: 2;
 }
+/* image in hero with text */
 .hero {
   background-image: url(../assest/image/desert-gff12d6fb0_1920-min.jpg);
-  height: 30vh;
+  min-height: 35vh;
   max-width: 100%;
-
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -106,9 +110,9 @@ header {
   color: white;
 }
 main {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
-
+/* use grid to style this section */
 .our-team {
   max-width: 90%;
   display: grid;
@@ -124,16 +128,17 @@ main {
 .card {
   max-width: 100%;
 }
+/* grid to style this section  */
 .our-work {
   background-color: #333333;
   margin-top: 3rem;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
-  min-height: 70vh;
+  min-height: 65vh;
   gap: 5px;
   padding: 1rem;
-  position: relative;
+  position: relative; /* to add icon relative with this section*/
 }
 .our-work::after {
   content: "\f055";
@@ -153,21 +158,22 @@ main {
 }
 .item {
   background-color: white;
-  min-height: 60vh;
+  min-height: 55vh;
 }
 .textaa {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding-left: 10px;
+  padding: 10px;
 }
 .our-work .text {
-  min-height: 58vh;
+  min-height: 53vh;
   color: white;
 }
+/* use flex to style this section  */
 .contactus {
   background-color: #f0f0f0;
-  max-width: 100%;
+  min-height: 43vh;
   padding: 1.5rem 10px;
   display: flex;
   justify-content: space-between;
@@ -185,15 +191,16 @@ main {
 .contactus i {
   color: #009688;
 }
-fieldset {
-  background-color: white;
-  box-shadow: 0 0 4px;
-  width: 50%;
-  padding: 0.5rem;
-}
+
 form {
+  background-color: white;
+  box-shadow: 0 0 2px;
+  width: 50%;
+  height: 0%;
   padding: 0.5rem;
+  margin-right: 1rem;
 }
+/* style input in form  */
 input[type="text"],
 input[type="email"] {
   width: 100%;
@@ -220,11 +227,12 @@ button {
   color: white;
   border: none;
 }
-
+/* damged image */
 .fake-img {
   width: 19px;
   height: 17px;
 }
+/* styling footer  */
 footer {
   min-height: 15vh;
   color: white;
@@ -269,6 +277,8 @@ footer h2 {
 .soical-links .d {
   width: 40px;
 }
+
+/* add media qurey to make a responsivty to a wepsite page */
 @media screen and (max-width: 600px) {
   .menu {
     display: none;
@@ -284,6 +294,14 @@ footer h2 {
   .menu li + li {
     margin-top: 12px;
   }
+  .dropdown {
+    margin-top: 12px;
+  }
+  .dropdown:hover .small-list {
+    top: 10rem;
+    z-index: 2;
+  }
+
   .hamburger {
     display: block;
     position: absolute;
@@ -293,6 +311,7 @@ footer h2 {
   input[type="checkbox"]:checked ~ .menu {
     display: block;
   }
+
   .ooo {
     position: absolute;
     right: 35px;
@@ -309,7 +328,7 @@ footer h2 {
   .our-work::after {
     bottom: -1.8%;
   }
-  fieldset {
+  form {
     width: 95%;
     margin-top: 1rem;
   }
